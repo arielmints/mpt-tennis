@@ -1,0 +1,71 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>מועדון טניס מכבי פתח תקווה</title>
+		<link rel="stylesheet" type="text/css" href={% static "css\bootstrap.css" %}>
+		<script src={% static "js\bootstrap.js" %}></script>
+	</head>
+	<body style="text-align:right;">
+
+        <div class="container">
+        <div class="col-md-10 col-md-offset-1">
+            <div  style="background-image: url({% static "court.jpg" %});" >
+                <div style="height:150px;"></div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <div class="container">
+		<div style="margin-top: 10px;" class="col-md-10 col-md-offset-1 ">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div>
+					<ul class="nav navbar-nav">
+						<li><a href="#">צור קשר&nbsp;<span class="glyphicon glyphicon-phone-alt"></span></a></li>
+					</ul>
+					<ul class="nav navbar-nav pull-right">
+						<li><a href="#">גלריה&nbsp;<span class="glyphicon glyphicon-picture"></span></a></li>
+						<li><a href="#">מאמנים&nbsp;<span class="glyphicon glyphicon-education"></span></a></li>
+						<li><a href="#">הזמנת מגרשים&nbsp;<span class="glyphicon glyphicon-calendar"></span></a></li>
+						<li><a href="#">דירוגים&nbsp;<span class="glyphicon glyphicon-th-list"></span></a></li>
+						<li><a href="#">בית&nbsp;<span class="glyphicon glyphicon-home"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		</div>
+        </div>
+
+    <div class="container">
+    <div class="col-md-offset-1">
+        <div class="col-md-8">
+		<div class="panel panel-info">
+        <div class="panel-heading">אודות בית הספר לטניס</div>
+			<div class="panel-body ">
+                {% block main_text %}
+                {% endblock %}
+			</div>
+		</div>
+		</div>
+            <div class="col-md-3" style="margin-left: -7px;">
+            <div class="panel panel-success" style="padding-left: 10px;padding-right: 10px;padding-top: 10px;padding-bottom: 10px;">
+            <img src={% static "logo2.png" %} style="margin-right: 15px;margin-bottom:10px;" />
+                <a href="http://www.accuweather.com/he/il/petah-tiqwa/212473/weather-forecast/212473" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+-->
+</a><div id="awcc1443219764430" class="aw-widget-current"  data-locationkey="212473" data-unit="c" data-language="he" data-useip="false" data-uid="awcc1443219764430"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+
+
+
+            <iframe width="210" height="132" src="https://www.youtube.com/embed/oyxhHkOel2I" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+	</body>
+</html>
